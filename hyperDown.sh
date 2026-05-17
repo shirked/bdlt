@@ -1,3 +1,4 @@
+cd ~/go/src/github.com/fabric-samples/test-network
 ./network.sh down
 docker rm -f $(docker ps -a -q)
 docker volume rm $(docker volume ls -q)
