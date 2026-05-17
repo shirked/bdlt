@@ -11,9 +11,6 @@ docker network prune -f
 
 # 4. Wipe out all locally generated crypto material, channel configurations, and logs
 sudo rm -rf organizations/ channel-artifacts/ system-genesis-block/ log.txt *.tar.gz
-
-# 5. Clear out cached Docker images to save space
-docker image prune -a -f
-
-# 6. Go home safely (without running invalid compose commands)
-cd ~
+git checkout -- organizations/
+cd ~/go/src/github.com/fabric-samples/explorer
+docker-compose down -v
