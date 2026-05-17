@@ -1,9 +1,9 @@
 # bdlt
 
-Hyperledger:-
+# Hyperledger:-
 
-Up:- 
+# Up:- 
 curl -fsSL https://raw.githubusercontent.com/shirked/bdlt/refs/heads/main/hyperUp.sh | bash
 
-Down:-
+# Down:-
 curl -fsSL https://raw.githubusercontent.com/shirked/bdlt/refs/heads/main/hyperDown.sh | bash
