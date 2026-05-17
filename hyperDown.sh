@@ -5,8 +5,8 @@ cd ~/go/src/github.com/fabric-samples/test-network
 ./network.sh down
 
 # 3. Clean up lingering Docker artifacts cleanly
-docker container prune -f
-docker volume prune -f
+docker ps -a -q | xargs -r docker rm -f
+docker volume ls -q | xargs -r docker volume rm
 docker network prune -f
 
 # 4. Wipe out all locally generated crypto material, channel configurations, and logs
